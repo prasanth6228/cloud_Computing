@@ -15,6 +15,14 @@ app.get('/', function (req, res) {
     res.send("<h1>Home Page</h1>")
 })
 
+app.get('/products',(req, res)=>{
+    res.send("<h1>Into prodcuts page</h1>");
+});
+
+app.get('/Profile',(req, res)=>{
+    res.send("<h1>Into profile page</h1>");
+});
+
 app.listen(process.env.PORT  || SERVER_PORT, () => {
     console.log(`Server running at http://${SERVER_HOST}:${SERVER_PORT}/`);
 })
